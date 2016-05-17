@@ -9,7 +9,7 @@ module HTTP
           @name, @value = name.to_s, value
 
           #@header = "Content-Disposition: form-data; name=#{@name.inspect}"
-
+          @header = ""
           return unless file?
 
           #@header << "; filename=#{value.filename.inspect}" unless value.filename.nil?
