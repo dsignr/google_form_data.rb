@@ -4,9 +4,9 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "http/form_data/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "http-form_data"
+  spec.name          = "http-google_form_data"
   spec.version       = HTTP::FormData::VERSION
-  spec.homepage      = "https://github.com/httprb/form_data.rb"
+  spec.homepage      = "https://github.com/dsignr/google_form_data.rb"
   spec.authors       = ["Aleksey V Zapparov"]
   spec.email         = ["ixti@member.fsf.org"]
   spec.license       = "MIT"
