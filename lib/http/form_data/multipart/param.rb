@@ -8,11 +8,11 @@ module HTTP
         def initialize(name, value)
           @name, @value = name.to_s, value
 
-          @header = "Content-Disposition: form-data; name=#{@name.inspect}"
+          #@header = "Content-Disposition: form-data; name=#{@name.inspect}"
 
           return unless file?
 
-          @header << "; filename=#{value.filename.inspect}"
+          #@header << "; filename=#{value.filename.inspect}" unless value.filename.nil?
           @header << CRLF
           @header << "Content-Type: #{value.mime_type}"
         end

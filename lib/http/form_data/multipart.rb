@@ -26,7 +26,7 @@ module HTTP
       #
       # @return [String]
       def content_type
-        "multipart/form-data; boundary=#{@boundary}"
+        "multipart/related; boundary=#{@boundary}"
       end
 
       # Returns form data content size to be used for HTTP request

@@ -40,6 +40,7 @@ module HTTP
           case file_or_io
           when String then ::File.basename file_or_io
           when ::File then ::File.basename file_or_io.path
+          when nil then nil  
           else             "stream-#{file_or_io.object_id}"
           end
         end
